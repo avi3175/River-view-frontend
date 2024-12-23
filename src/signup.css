@@ -1,0 +1,99 @@
+/* General Container Styling */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://c0.wallpaperflare.com/preview/732/535/707/dhaka-bangladesh-gulshan-1-bridge-thumbnail.jpg') 
+                no-repeat center center/cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Add an overlay for better contrast */
+  .signup-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  
+  /* Form Styling */
+  .signup-form {
+    position: relative;
+    z-index: 1;
+    background: #10131a;
+    /* background: linear-gradient(to right, #122647, #09102e); */
+
+    color: #333;
+    border-radius: 10px;
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Labels */
+  .signup-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #dadfe5;
+  }
+  
+  /* Inputs */
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  /* Button */
+  .signup-button {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    background: linear-gradient(to right, #122647, #09102e);
+
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .signup-button:hover {
+    background: linear-gradient(to right, #122647, #09102e);
+  }
+  
+  /* Focus State */
+  .signup-form input:focus {
+    outline: none;
+    border: 1px solid #6a11cb;
+    box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
+  }
+
+  /* Message Styling */
+  .message {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #e74c3c;
+  }
